@@ -16,7 +16,7 @@ public class Twenty {
             o[0]=1; for(int n=0;n<f;n++) {for(int i=0;i<(int)o[1];i++) if(b[i]==0 || i%4!=0&&b[i]==b[i-1]) o[0]=0; r();}
             if((int)o[0]==0) for(int i=0;i<(int)o[1];i++) if(b[i]==2048) o[0]=2; o[3] = ' ';
         }
-        System.out.println("You " + ((int)o[0] == 1 ? "won" : "lost"));
+        System.out.println("You " + ((int)o[0] == 1 ? "lost" : "won"));
     }
     private static void m() { for(int i = 0; i<f; i++) v(); c(); v(); }
     private static void v() { for(int j=0;j<(int)o[1]-f;j++){ if(b[j]==0){b[j]=b[j+f];b[j+f]=0;}}}
